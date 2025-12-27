@@ -69,6 +69,10 @@ docs/
 “왜 그렇게 만들었는가를 설명할 수 있는 개발자”를 목표로 합니다.
 
 
-## 기술 스택
-구체적인 기술 스택은 사용 패턴과 확장 요구에 따라 점진적으로 결정합니다.
+## 기술 스택(변경 가능)
+
+Frontend (디자인 전반) : React 
+Backend (데이터 기반) : Spring Boot(Java) + Python 
+DB : MariaDB(MySQL)
+AI 분석 : 준비 예정 (Spring AI 생각중), OPENAI(LLM RAG)
 
