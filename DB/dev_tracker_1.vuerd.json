@@ -4,12 +4,12 @@
   "settings": {
     "width": 2000,
     "height": 2000,
-    "scrollTop": -469.3714,
-    "scrollLeft": -372.0078,
+    "scrollTop": -488.3714,
+    "scrollLeft": -326.5277,
     "zoomLevel": 1,
     "show": 431,
     "database": 4,
-    "databaseName": "",
+    "databaseName": "dev_tracker_1",
     "canvasType": "ERD",
     "language": 1,
     "tableNameCase": 4,
@@ -31,7 +31,8 @@
   },
   "doc": {
     "tableIds": [
-      "Oivre-0Qhm1T3K4JOOy7L"
+      "Oivre-0Qhm1T3K4JOOy7L",
+      "UfqWu9hfSFXHxz5QpKtTR"
     ],
     "relationshipIds": [],
     "indexIds": [
@@ -56,16 +57,41 @@
           "da8mH-De0FMRrQrxITeK5"
         ],
         "ui": {
-          "x": 457.9752,
+          "x": 458.9752,
           "y": 678.9548,
           "zIndex": 2,
+          "widthName": 60,
+          "widthComment": 60,
+          "color": "#3F51B5"
+        },
+        "meta": {
+          "updateAt": 1768020577482,
+          "createAt": 1767937269661
+        }
+      },
+      "UfqWu9hfSFXHxz5QpKtTR": {
+        "id": "UfqWu9hfSFXHxz5QpKtTR",
+        "name": "log",
+        "comment": "로그",
+        "columnIds": [
+          "lAhALfzxH7yzsDzhNfT8w",
+          "oI9sHQJitPqMF2Hm3-F08"
+        ],
+        "seqColumnIds": [
+          "lAhALfzxH7yzsDzhNfT8w",
+          "oI9sHQJitPqMF2Hm3-F08"
+        ],
+        "ui": {
+          "x": 946.5277,
+          "y": 876.3714,
+          "zIndex": 3,
           "widthName": 60,
           "widthComment": 60,
           "color": ""
         },
         "meta": {
-          "updateAt": 1767937655611,
-          "createAt": 1767937269661
+          "updateAt": 1768124416948,
+          "createAt": 1768124367083
         }
       }
     },
@@ -128,6 +154,46 @@
         "meta": {
           "updateAt": 1767937645289,
           "createAt": 1767937633289
+        }
+      },
+      "lAhALfzxH7yzsDzhNfT8w": {
+        "id": "lAhALfzxH7yzsDzhNfT8w",
+        "tableId": "UfqWu9hfSFXHxz5QpKtTR",
+        "name": "id",
+        "comment": "AUTO_INCREMENT",
+        "dataType": "BIGINT",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 102,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1768124395090,
+          "createAt": 1768124380048
+        }
+      },
+      "oI9sHQJitPqMF2Hm3-F08": {
+        "id": "oI9sHQJitPqMF2Hm3-F08",
+        "tableId": "UfqWu9hfSFXHxz5QpKtTR",
+        "name": "type",
+        "comment": "",
+        "dataType": "ENUM",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1768124413941,
+          "createAt": 1768124398018
         }
       }
     },
