@@ -4,8 +4,8 @@
   "settings": {
     "width": 2000,
     "height": 2000,
-    "scrollTop": -488.3714,
-    "scrollLeft": -326.5277,
+    "scrollTop": -489.3714,
+    "scrollLeft": -329.5277,
     "zoomLevel": 1,
     "show": 431,
     "database": 4,
@@ -32,7 +32,8 @@
   "doc": {
     "tableIds": [
       "Oivre-0Qhm1T3K4JOOy7L",
-      "UfqWu9hfSFXHxz5QpKtTR"
+      "UfqWu9hfSFXHxz5QpKtTR",
+      "y-hmoNVndmEEsoK5KjFWi"
     ],
     "relationshipIds": [],
     "indexIds": [
@@ -82,16 +83,35 @@
           "oI9sHQJitPqMF2Hm3-F08"
         ],
         "ui": {
-          "x": 946.5277,
-          "y": 876.3714,
+          "x": 970.5277,
+          "y": 960.3714,
           "zIndex": 3,
           "widthName": 60,
           "widthComment": 60,
           "color": ""
         },
         "meta": {
-          "updateAt": 1768124416948,
+          "updateAt": 1768186472147,
           "createAt": 1768124367083
+        }
+      },
+      "y-hmoNVndmEEsoK5KjFWi": {
+        "id": "y-hmoNVndmEEsoK5KjFWi",
+        "name": "member_log",
+        "comment": "",
+        "columnIds": [],
+        "seqColumnIds": [],
+        "ui": {
+          "x": 924.5277,
+          "y": 778.3714,
+          "zIndex": 6,
+          "widthName": 68,
+          "widthComment": 60,
+          "color": ""
+        },
+        "meta": {
+          "updateAt": 1768186483051,
+          "createAt": 1768186475483
         }
       }
     },
