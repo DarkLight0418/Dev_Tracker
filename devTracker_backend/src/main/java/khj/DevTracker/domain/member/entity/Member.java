@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 
 /**
  * 회원 엔티티 클래스
- * @author kcw
+ * @author khj
  * @since 2026-01-21
  */
 
