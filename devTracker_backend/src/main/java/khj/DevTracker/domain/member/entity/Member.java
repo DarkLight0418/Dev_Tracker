@@ -1,13 +1,13 @@
 package khj.DevTracker.domain.member.entity;
 
-import jakarta.persistence.Entity;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 /**
  * 회원 엔티티 클래스
- * @author kcw
+ * @author khj
  * @since 2026-01-21
  */
 
@@ -16,5 +16,15 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Member {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long memberNo;
 
+    @Column(nullable = false)
+    private String memberId;
+
+    @Column(nullable = false)
+    private String password;
+
+    private String nickname;
 }
