@@ -1,6 +1,6 @@
 package khj.DevTracker.domain.member.entity;
 
-import jakarta.persistence.Entity;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -16,5 +16,15 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Member {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long memberNo;
 
+    @Column(nullable = false)
+    private String memberId;
+
+    @Column(nullable = false)
+    private String password;
+
+    private String nickname;
 }
