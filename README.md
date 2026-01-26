@@ -85,7 +85,7 @@ docs/
 ---
 
 ## 7. 기술 스택
-- Frontend: React
+- Frontend: React / React Native (예정)
 - Backend: Spring Boot (Java) ( + Python)
 - Database: MariaDB (MySQL)
 - AI 분석: Spring AI (예정), OpenAI LLM (RAG 방식)
