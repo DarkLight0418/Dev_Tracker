@@ -1,4 +1,4 @@
-package khj.DevTracker.domain.member.entity;
+package khj.DevTracker.layer.domain.member.entity;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
