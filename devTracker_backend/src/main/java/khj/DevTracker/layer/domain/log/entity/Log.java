@@ -1,4 +1,5 @@
-package khj.DevTracker.domain.member.entity;
+package khj.DevTracker.layer.domain.log.entity;
+
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -6,25 +7,21 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 /**
- * 회원 엔티티 클래스
+ * 로그 엔티티 클래스
  * @author khj
- * @since 2026-01-21
+ * @since 2026-02-01
  */
 
 @Entity
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
-public class Member {
+public class Log {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long memberNo;
+    private Long logId;
 
     @Column(nullable = false)
-    private String memberId;
-
-    @Column(nullable = false)
-    private String password;
-
-    private String nickname;
+    private Long targetId;
 }
