@@ -9,7 +9,7 @@ import lombok.Getter;
  */
 
 @Getter
-public enum Type {
+public enum LogType {
     LOGIN("회원 로그인"),
     CREATE_RECORD("로그 생성"),
     CREATE_PROBLEM("문제 생성"),
@@ -17,5 +17,5 @@ public enum Type {
 
     private final String value;
 
-    Type(String value) { this.value = value;}
+    LogType(String value) { this.value = value;}
 }
