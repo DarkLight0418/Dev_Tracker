@@ -3,6 +3,7 @@ package khj.DevTracker.layer.domain.log.entity;
 
 import jakarta.persistence.*;
 import khj.DevTracker.layer.domain.log.enums.LogType;
+import khj.DevTracker.layer.domain.member.entity.Member;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
@@ -38,9 +39,13 @@ public class Log {
     @Column(nullable = false)
     private LocalDateTime createdAt;
 
+    @ManyToOne(fetch = FetchType.LAZY)
+    private Member member;
+
     @Builder
-    private Log(Long targetId, LogType type) {
+    private Log(Long targetId, LogType type, Member member) {
         this.targetId = targetId;
         this.type = type;
+        this.member = member;
     }
 }
