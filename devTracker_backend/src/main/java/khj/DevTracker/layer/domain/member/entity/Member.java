@@ -2,6 +2,7 @@ package khj.DevTracker.layer.domain.member.entity;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
@@ -27,4 +28,11 @@ public class Member {
     private String password;
 
     private String nickname;
+
+    @Builder
+    public Member(String memberId, String password, String nickname) {
+        this.memberId = memberId;
+        this.password = password;
+        this.nickname = nickname;
+    }
 }
