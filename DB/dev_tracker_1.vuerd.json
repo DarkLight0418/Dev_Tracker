@@ -4,9 +4,9 @@
   "settings": {
     "width": 2000,
     "height": 2000,
-    "scrollTop": -701.3119,
-    "scrollLeft": -450.3219,
-    "zoomLevel": 0.34,
+    "scrollTop": -667.9768,
+    "scrollLeft": -395.9253,
+    "zoomLevel": 1,
     "show": 511,
     "database": 4,
     "databaseName": "dev_tracker_1",
@@ -1135,7 +1135,7 @@
         "id": "7MlVlax5sH8eZ0IWvJWf4",
         "tableId": "l6Xu-SRdpT5atn8-mcUrK",
         "name": "result",
-        "comment": "결과/실패 이윤",
+        "comment": "결과/실패 이유",
         "dataType": "TEXT",
         "default": "",
         "options": 0,
@@ -1147,7 +1147,7 @@
           "widthDefault": 60
         },
         "meta": {
-          "updateAt": 1768615502549,
+          "updateAt": 1771812684978,
           "createAt": 1768615481422
         }
       },

@@ -2,12 +2,12 @@ package khj.DevTracker.layer.domain.problem.entity;
 
 
 import jakarta.persistence.*;
+import khj.DevTracker.layer.domain.problem.enums.Status;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import org.hibernate.annotations.UpdateTimestamp;
 import org.springframework.data.annotation.CreatedDate;
-import org.springframework.data.annotation.Id;
 
 import java.time.LocalDateTime;
 
@@ -24,11 +24,17 @@ import java.time.LocalDateTime;
 public class Problem {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int problemId;
+    private Long problemId;
 
+    @Column
     private String title;
 
+    @Column(columnDefinition = "TEXT")
     private String description;
+
+    @Column(nullable = false)
+    @Enumerated(EnumType.STRING)
+    private Status status;
 
     @CreatedDate
     @Column(nullable = false)
@@ -36,4 +42,5 @@ public class Problem {
 
     @UpdateTimestamp
     private LocalDateTime solvedAt;
+
 }
