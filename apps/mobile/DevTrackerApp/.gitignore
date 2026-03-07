@@ -150,7 +150,7 @@ google-services.json
 ### ReactNative.Gradle Stack ###
 .gradle
 **/build/
-!src/**/build/
+!android/app/src/**/build/
 
 # Ignore Gradle GUI config
 gradle-app.setting

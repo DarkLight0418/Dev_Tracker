@@ -108,3 +108,12 @@ local.properties
 hs_err_pid*
 
 # End of https://www.toptal.com/developers/gitignore/api/eclipse,java
+
+
+**/node_modules/
+**/build/
+**/.gradle/
+**/bin/
+**/.idea/
+**/.DS_Store
+**/*.iml
